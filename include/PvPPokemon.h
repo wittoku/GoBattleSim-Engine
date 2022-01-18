@@ -11,7 +11,7 @@ class PvPPokemon : public Pokemon
 {
 public:
 	PvPPokemon() = default;
-	PvPPokemon(int, int, double, double, int), int;
+	PvPPokemon(int, int, double, double, int, int);
 	PvPPokemon(const PvPPokemon &);
 	~PvPPokemon();
 
