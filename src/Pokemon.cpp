@@ -25,7 +25,7 @@ int calc_damage(const Pokemon *attacker,
 	return 0.5 * attacker->attack / defender->defense * move->power * multiplier + 1;
 }
 
-Pokemon::Pokemon(int t_poketype1, int t_poketype2, double t_attack, double t_defense, int t_max_hp, int starting_energy)
+Pokemon::Pokemon(int t_poketype1, int t_poketype2, double t_attack, double t_defense, int t_max_hp, int t_starting_energy)
 	: poketype1(t_poketype1), poketype2(t_poketype2), attack(t_attack), defense(t_defense), max_hp(t_max_hp), starting_energy(t_starting_energy)
 {
 }
