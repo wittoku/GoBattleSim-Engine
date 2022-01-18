@@ -594,7 +594,6 @@ void to_json(json &j, const AveragePokemonState &pkm_st)
 {
     j["hp"] = pkm_st.hp;
     j["maxHP"] = pkm_st.max_hp;
-    j["startingEnergy"] = pkm_st.starting_energy;
     j["energy"] = pkm_st.energy;
     j["tdo"] = pkm_st.tdo;
     j["tdoFast"] = pkm_st.tdo_fast;
