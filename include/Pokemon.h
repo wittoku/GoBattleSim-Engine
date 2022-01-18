@@ -16,7 +16,7 @@ class Pokemon
 {
 public:
 	Pokemon() = default;
-	Pokemon(int, int, double, double, int);
+	Pokemon(int, int, double, double, int, int);
 	Pokemon(const Pokemon &);
 	Pokemon &operator=(const Pokemon &);
 	~Pokemon();
