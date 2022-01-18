@@ -87,7 +87,7 @@ void SimplePvPBattle::init()
 	{
 		m_pkm[i].init();
 		m_pkm_states[i].hp = m_pkm[i].max_hp;
-		m_pkm_states[i].energy = 0;
+		m_pkm_states[i].energy = m_pkm[i].starting_energy;
 		m_pkm_states[i].cooldown = 0;
 		m_pkm_states[i].shields = m_num_shields_max[i];
 		m_pkm_states[i].decision.type = ActionType::None;

@@ -14,6 +14,7 @@
             "attack": 223.6549,
             "defense": 179.3981,
             "maxHP": 162,
+            "startingEnergy":50,
             "fmove": {
                 "name": "dragon breath",
                 "pokeType": "dragon",
@@ -50,6 +51,7 @@
             "attack": 192.0429,
             "defense": 206.2683,
             "maxHP": 162,
+            "startingEnergy":0,
             "fmove": {
                 "name": "dragon breath",
                 "pokeType": "dragon",

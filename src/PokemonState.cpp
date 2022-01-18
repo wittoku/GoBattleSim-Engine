@@ -10,7 +10,7 @@ void PokemonState::init()
     heal();
     active = false;
     hp = max_hp;
-    energy = 0;
+    energy = starting_energy;
     damage_reduction_expiry = 0;
     tdo = 0;
     tdo_fast = 0;

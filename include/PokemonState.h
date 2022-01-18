@@ -10,6 +10,7 @@ struct PokemonState
 	bool active{false};
 	bool immortal{false};
 	int max_hp{0};
+	int starting_energy{0};
 	int hp{0};
 	int energy{0};
 	unsigned damage_reduction_expiry{0};

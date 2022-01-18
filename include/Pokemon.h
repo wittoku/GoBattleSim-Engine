@@ -34,6 +34,7 @@ public:
 	double attack{0};
 	double defense{0};
 	int max_hp{0};
+	int starting_energy{};
 	bool immortal{false};
 
 	Move fmove;

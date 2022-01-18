@@ -104,6 +104,7 @@ void to_json(json &j, const Pokemon &pkm)
     j["attack"] = pkm.attack;
     j["defense"] = pkm.defense;
     j["maxHP"] = pkm.max_hp;
+    j["startingEnergy"] = pkm.starting_energy;
     j["immortal"] = pkm.immortal;
     j["fmove"] = pkm.fmove;
     j["cmoves"] = std::vector<Move>(pkm.cmoves, pkm.cmoves + pkm.cmoves_count);
@@ -122,6 +123,7 @@ void from_json(const json &j, Pokemon &pkm)
     j.at("attack").get_to(pkm.attack);
     j.at("defense").get_to(pkm.defense);
     j.at("maxHP").get_to(pkm.max_hp);
+    j.at("startingEnergy").get_to(pkm.starting_energy);
 
     j.at("fmove").get_to(pkm.fmove);
     for (const auto &cmove_j : j.at("cmoves"))
@@ -564,6 +566,7 @@ void to_json(json &j, const PokemonState &pkm_st)
 {
     j["hp"] = pkm_st.hp;
     j["maxHP"] = pkm_st.max_hp;
+    j["startingEnergy"] = pkm_st.starting_energy;
     j["energy"] = pkm_st.energy;
     j["tdo"] = pkm_st.tdo;
     j["tdoFast"] = pkm_st.tdo_fast;
@@ -591,6 +594,7 @@ void to_json(json &j, const AveragePokemonState &pkm_st)
 {
     j["hp"] = pkm_st.hp;
     j["maxHP"] = pkm_st.max_hp;
+    j["startingEnergy"] = pkm_st.starting_energy;
     j["energy"] = pkm_st.energy;
     j["tdo"] = pkm_st.tdo;
     j["tdoFast"] = pkm_st.tdo_fast;
