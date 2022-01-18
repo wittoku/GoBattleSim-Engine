@@ -6,7 +6,7 @@
 namespace GoBattleSim
 {
 
-PvPPokemon::PvPPokemon(int t_poketype1, int t_poketype2, double t_attack, double t_defense, int t_max_hp), int t_starting_energy)
+PvPPokemon::PvPPokemon(int t_poketype1, int t_poketype2, double t_attack, double t_defense, int t_max_hp, int t_starting_energy)
 	: Pokemon(t_poketype1, t_poketype2, t_attack, t_defense, t_max_hp,t_starting_energy)
 {
 	attack_stage = 0;
